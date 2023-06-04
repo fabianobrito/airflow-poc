@@ -1,0 +1,27 @@
+[2023-06-03T18:29:15.799+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: apresentacao_airflow.extracao_dados_pockemon scheduled__2023-06-03T16:30:00+00:00 [queued]>
+[2023-06-03T18:29:15.805+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: apresentacao_airflow.extracao_dados_pockemon scheduled__2023-06-03T16:30:00+00:00 [queued]>
+[2023-06-03T18:29:15.805+0000] {taskinstance.py:1308} INFO - Starting attempt 12 of 12
+[2023-06-03T18:29:15.816+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): extracao_dados_pockemon> on 2023-06-03 16:30:00+00:00
+[2023-06-03T18:29:15.820+0000] {standard_task_runner.py:57} INFO - Started process 1256 to run task
+[2023-06-03T18:29:15.822+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'apresentacao_***', 'extracao_dados_pockemon', 'scheduled__2023-06-03T16:30:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/***-example.py', '--cfg-path', '/tmp/tmpucddq6br']
+[2023-06-03T18:29:15.822+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask extracao_dados_pockemon
+[2023-06-03T18:29:15.851+0000] {task_command.py:410} INFO - Running <TaskInstance: apresentacao_airflow.extracao_dados_pockemon scheduled__2023-06-03T16:30:00+00:00 [running]> on host 7e08fa621370
+[2023-06-03T18:29:15.896+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='apresentacao_***' AIRFLOW_CTX_TASK_ID='extracao_dados_pockemon' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T16:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='12' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-03T16:30:00+00:00'
+[2023-06-03T18:29:15.923+0000] {logging_mixin.py:149} INFO -          0   Bulbasaur  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+0        1     Ivysaur  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+1        2    Venusaur  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+2        3    Venusaur  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+3        4  Charmander  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+4        5  Charmeleon  ...  87.5% male, 12.5% female     20 (4,884–5,140 steps)
+...    ...         ...  ...                       ...                        ...
+1039  1040   Glastrier  ...                Genderless  120 (30,584–30,840 steps)
+1040  1041   Spectrier  ...                Genderless  120 (30,584–30,840 steps)
+1041  1042     Calyrex  ...                Genderless  120 (30,584–30,840 steps)
+1042  1043     Calyrex  ...                Genderless  120 (30,584–30,840 steps)
+1043  1044     Calyrex  ...                Genderless  120 (30,584–30,840 steps)
+
+[1044 rows x 23 columns]
+[2023-06-03T18:29:15.923+0000] {python.py:183} INFO - Done. Returned value was: 1044
+[2023-06-03T18:29:15.937+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=apresentacao_***, task_id=extracao_dados_pockemon, execution_date=20230603T163000, start_date=20230603T182915, end_date=20230603T182915
+[2023-06-03T18:29:15.953+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-03T18:29:15.977+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,16 @@
+[2023-06-03T18:36:29.182+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: apresentacao_airflow.e_valida scheduled__2023-06-03T17:30:00+00:00 [queued]>
+[2023-06-03T18:36:29.188+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: apresentacao_airflow.e_valida scheduled__2023-06-03T17:30:00+00:00 [queued]>
+[2023-06-03T18:36:29.188+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2023-06-03T18:36:29.199+0000] {taskinstance.py:1327} INFO - Executing <Task(BranchPythonOperator): e_valida> on 2023-06-03 17:30:00+00:00
+[2023-06-03T18:36:29.204+0000] {standard_task_runner.py:57} INFO - Started process 1421 to run task
+[2023-06-03T18:36:29.206+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'apresentacao_***', 'e_valida', 'scheduled__2023-06-03T17:30:00+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/***-example.py', '--cfg-path', '/tmp/tmpkkub4q5t']
+[2023-06-03T18:36:29.207+0000] {standard_task_runner.py:85} INFO - Job 35: Subtask e_valida
+[2023-06-03T18:36:29.235+0000] {task_command.py:410} INFO - Running <TaskInstance: apresentacao_airflow.e_valida scheduled__2023-06-03T17:30:00+00:00 [running]> on host 7e08fa621370
+[2023-06-03T18:36:29.283+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='apresentacao_***' AIRFLOW_CTX_TASK_ID='e_valida' AIRFLOW_CTX_EXECUTION_DATE='2023-06-03T17:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-03T17:30:00+00:00'
+[2023-06-03T18:36:29.292+0000] {python.py:183} INFO - Done. Returned value was: valido
+[2023-06-03T18:36:29.292+0000] {python.py:216} INFO - Branch callable return valido
+[2023-06-03T18:36:29.292+0000] {skipmixin.py:161} INFO - Following branch valido
+[2023-06-03T18:36:29.292+0000] {skipmixin.py:221} INFO - Skipping tasks ['nvalido']
+[2023-06-03T18:36:29.317+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=apresentacao_***, task_id=e_valida, execution_date=20230603T173000, start_date=20230603T183629, end_date=20230603T183629
+[2023-06-03T18:36:29.337+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-03T18:36:29.350+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check
